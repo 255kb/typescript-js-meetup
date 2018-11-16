@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "lint": "tslint --project .",
     "compile": "tsc"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/255kb/typescript-js-meetup#readme",
   "devDependencies": {
+    "tslint": "^5.11.0",
     "typescript": "^3.1.6"
   }
 }
