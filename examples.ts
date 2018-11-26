@@ -57,11 +57,11 @@ function neverReturning(): never {
 
 const text: any = 'lorem ipsum bla';
 (text as string).length;
-<string>text.length;
+<string> text.length;
 
 const data = {
     prop1: '',
-    prop2: <Error>{ message: '' }
+    prop2: <Error> { message: '' }
 };
 
 

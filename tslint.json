@@ -8,7 +8,16 @@
         "quotemark": [
             true,
             "single"
-        ]
+        ],
+        "interface-name": false,
+        "jsdoc-format": false,
+        "trailing-comma": false,
+        "no-unused-expression": false,
+        "no-consecutive-blank-lines": false,
+        "array-type": false,
+        "no-angle-bracket-type-assertion": false,
+        "interface-over-type-literal": false,
+        "object-literal-sort-keys": false
     },
     "rulesDirectory": []
 }
