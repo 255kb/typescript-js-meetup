@@ -5,22 +5,22 @@ let infered = false;
 
 let country: 'LU' | 'DE' | 'FR' = 'DE';
 if (country === 'DE') {
-    country;
+  country;
 } else {
-    country;
+  country;
 }
 
 // infered an array of an union of 2 objects types
 const animals = [
-    {
-        legs: 4,
-        fly: false,
-        name: 'cat'
-    },
-    {
-        legs: 2,
-        fly: true,
-        name: 'bird',
-        weight: 25
-    }
+  {
+    legs: 4,
+    fly: false,
+    name: 'cat'
+  },
+  {
+    legs: 2,
+    fly: true,
+    name: 'bird',
+    weight: 25
+  }
 ];

@@ -4,10 +4,10 @@
 /** Intersections & */
 
 type User = {
-    name: string;
+  name: string;
 };
 type Admin = User & {
-    adminAccessRights: string[];
+  adminAccessRights: string[];
 };
 
 const SimpleUser: User = { name: 'John' };
@@ -16,12 +16,12 @@ const AdminUser: Admin = { name: 'John', adminAccessRights: [''] };
 
 /** Unions | */
 type Fish = {
-    underwaterSpeed?: number;
-    name: string;
+  underwaterSpeed?: number;
+  name: string;
 };
 type Mammal = {
-    legs: number;
-    name: string;
+  legs: number;
+  name: string;
 };
 
 type Animal = Fish | Mammal;

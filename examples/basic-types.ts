@@ -24,9 +24,9 @@ x[2];
 /** Enums */
 
 enum Things {
-    Thing1 = 1,
-    Thing2 = 2,
-    Thing3 = 3
+  Thing1 = 1,
+  Thing2 = 2,
+  Thing3 = 3
 }
 Things.Thing1;
 
@@ -45,5 +45,5 @@ const whatever: any = true;
 /** Never */
 
 function neverReturning(): never {
-    throw new Error();
+  throw new Error();
 }

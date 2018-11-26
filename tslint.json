@@ -17,7 +17,11 @@
         "array-type": false,
         "no-angle-bracket-type-assertion": false,
         "interface-over-type-literal": false,
-        "object-literal-sort-keys": false
+        "object-literal-sort-keys": false,
+        "no-console": false,
+        "arrow-parens": false,
+        "member-access": false,
+        "variable-name": false
     },
     "rulesDirectory": []
 }

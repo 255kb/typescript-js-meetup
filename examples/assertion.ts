@@ -5,6 +5,6 @@ const text: any = 'lorem ipsum bla';
 <string> text.length;
 
 const data = {
-    prop1: '',
-    prop2: <Error> { message: '' }
+  prop1: '',
+  prop2: <Error> { message: '' }
 };
