@@ -1,15 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Member = /** @class */ (function () {
-    function Member(age) {
+class Member {
+    constructor(age) {
         this.age = age;
     }
-    Member.prototype.hasMajority = function () {
+    hasMajority() {
         if (this.age === null) {
             throw new Error('Age unknown');
         }
         return this.age >= 18;
-    };
-    return Member;
-}());
+    }
+}
 exports.Member = Member;

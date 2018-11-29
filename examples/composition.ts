@@ -27,3 +27,28 @@ type Mammal = {
 type Animal = Fish | Mammal;
 
 const Catfish: Animal = { name: 'catfish', underwaterSpeed: 10 };
+
+
+/** Composition: difference between interface and type */
+
+interface FooInterface {
+  bar: number;
+}
+
+type FooType = {
+  bar: string;
+};
+
+
+/**
+ * This code is invalid:
+ * interface Bar implements FooType {}
+ *
+ * An interface cannot implement a type, because a type can be anything
+ */
+
+type Bar = FooInterface|FooType;
+
+const bar: Bar = {
+  bar: '1'
+};
