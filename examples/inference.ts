@@ -51,7 +51,7 @@ window.onmouseover = function (mouseEvent) {
 
 /** TYPE COMPATIBILITY */
 
-interface Animal {
+interface Animals {
   type: string;
   legs: number;
 }
@@ -61,7 +61,7 @@ class Bird {
   legs: number;
 }
 
-let seagul: Animal;
+let seagul: Animals;
 seagul = new Bird();// <-- ok because interface and class are compatible even if Bird does not implements Animal
 
 

@@ -16,7 +16,7 @@ const AdminUser: Admin = { name: 'John', adminAccessRights: [''] };
 
 /** Unions | */
 type Fish = {
-  underwaterSpeed?: number;
+  underwaterSpeed: number;
   name: string;
 };
 type Mammal = {
@@ -24,9 +24,13 @@ type Mammal = {
   name: string;
 };
 
-type Animal = Fish | Mammal;
-
-const Catfish: Animal = { name: 'catfish', underwaterSpeed: 10 };
+function getCat() {
+  return <Mammal>{
+    legs: 4,
+    name: 'cat'
+  }
+}
+const Catfish: Fish | Mammal = getCat();
 
 
 /** Composition: difference between interface and type */
