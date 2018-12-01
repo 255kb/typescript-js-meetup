@@ -6,6 +6,10 @@
 const myName: string = 'Georges';
 const myAge: number = 40;
 
+/** Literals (string, numbers) */
+const stringLiteral: 'string1' | 'string2' = 'string1';
+const numberLiteral: 25 | 56 = 25;
+
 
 /** Arrays */
 
