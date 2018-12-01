@@ -1,7 +1,8 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended"
+        "tslint:recommended",
+        //"tslint-sonarts"
     ],
     "jsRules": {},
     "rules": {
@@ -23,5 +24,7 @@
         "member-access": false,
         "variable-name": false
     },
-    "rulesDirectory": []
+    "rulesDirectory": [
+      // "node_modules/codelyzer"
+    ]
 }
