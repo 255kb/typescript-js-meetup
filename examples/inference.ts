@@ -1,5 +1,6 @@
 /** TYPE INFERENCE */
 
+
 // there is a tslint rule to enforce this: no-inferrable-types
 let infered = false;
 
@@ -9,6 +10,7 @@ if (country === 'DE') {
 } else {
   country;
 }
+
 
 // infered an array of an union of 2 objects types
 const animals = [
@@ -24,3 +26,24 @@ const animals = [
     weight: 25
   }
 ];
+
+
+// best type --> number[]
+let best = [0, 25, 58, null];
+
+
+// infered string literal
+function inferedStringLiteral() {
+  if (Math.random() > 0.5) {
+    return 'hello';
+  } else {
+    return 'world';
+  }
+}
+
+
+// contextual type
+window.onmouseover = function (mouseEvent) {
+  mouseEvent.clientX;
+  mouseEvent.anything; // <-- Error
+}
