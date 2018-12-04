@@ -18,7 +18,7 @@ type myType = keyof typeof List;
 
 const myObject1: { [K in keyof typeof List]: string } = {
   ONE: '',
-  TWO: ''
+  TWO: '',
   THREE: '' // <-- error
 };
 

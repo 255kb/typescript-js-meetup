@@ -5,4 +5,4 @@ enum Status {
   Disabled = 'enabled', // Oops 🤬
 }
 
-console.log(Status.Enabled === Status.Disabled); // Totally valid !! 🧐
+console.log(Status.Enabled === Status.Disabled); // true 🧐
