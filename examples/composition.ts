@@ -57,13 +57,7 @@ type FooType = {
   bar: string;
 };
 
-
-/**
- * This code is invalid:
- * interface Bar implements FooType {}
- *
- * An interface cannot implement a type, because a type can be anything
- */
+interface IBar implements FooType {} //An interface cannot implement a type, because a type can be anything
 
 type Bar = FooInterface|FooType;
 
