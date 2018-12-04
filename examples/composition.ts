@@ -15,22 +15,36 @@ const AdminUser: Admin = { name: 'John', adminAccessRights: [''] };
 
 
 /** Unions | */
-type Fish = {
-  underwaterSpeed: number;
-  name: string;
-};
-type Mammal = {
-  legs: number;
-  name: string;
-};
 
-function getCat() {
-  return <Mammal>{
-    legs: 4,
-    name: 'cat'
+class Fish {
+  constructor(
+    public underwaterSpeed: number,
+    public name: string
+  ) { }
+}
+
+class Mammal {
+  constructor(
+    public legs: number,
+    public name: string
+  ) { }
+}
+
+function getCat(): Fish | Mammal {
+  if (Math.random() > 0.5) {
+    return new Fish(20, 'Catfish')
+  } else {
+    return new Mammal(4, 'Cat');
   }
 }
-const Catfish: Fish | Mammal = getCat();
+const catfish: Fish | Mammal = getCat();
+catfish.name // <-- only suggests `name`
+
+if (catfish instanceof Fish) {
+  console.log(catfish.underwaterSpeed)
+} else {
+  console.log(catfish.legs)
+}
 
 
 /** Composition: difference between interface and type */
