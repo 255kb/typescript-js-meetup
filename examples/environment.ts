@@ -6,10 +6,10 @@
 // This would not compile in TS (with strict mode) : document.getElementById("test").innerHTML = "Hello World";
 
 document.addEventListener("click", () => {
-  
+
   const element = document.getElementById("test");
-  
-  if(element) {
+
+  if (element) {
     element.innerHTML = "Hello World";
   }
 });
@@ -19,11 +19,11 @@ document.addEventListener("click", () => {
 
 // Needs : npm install @types/node --save-dev
 
-import * as fs from 'fs'
+import * as fs from 'fs';
 
 const walletPath = 'C:\\Users\\RichGuy\\Appdata\\Roaming\\Bitcoin\\wallet.dat';
 
-if(fs.existsSync(walletPath)) {
+if (fs.existsSync(walletPath)) {
   fs.readFileSync(walletPath);
 }
 

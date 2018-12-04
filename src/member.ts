@@ -1,19 +1,19 @@
 interface Human {
-    age: number | null;
+  age: number | null;
 }
 
 export class Member implements Human {
-    public age: number | null;
+  public age: number | null;
 
-    constructor(age: number | null) {
-        this.age = age;
+  constructor(age: number | null) {
+    this.age = age;
+  }
+
+  public hasMajority() {
+    if (this.age === null) {
+      throw new Error('Age unknown');
     }
 
-    public hasMajority() {
-        if (this.age === null) {
-            throw new Error('Age unknown');
-        }
-
-        return this.age >= 18;
-    }
+    return this.age >= 18;
+  }
 }
