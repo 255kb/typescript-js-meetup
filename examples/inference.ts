@@ -77,13 +77,13 @@ person = employee1; // <-- ok because Named properties are all in employee1 infe
 
 
 enum Enum1 {
-  Red,
-  Green
+  Red = 0,
+  Green = 1
 }
 enum Enum2 {
-  Low,
-  Medium, 
-  High
+  Low = 0,
+  Medium = 1, 
+  High = 2
 }
 
 let a = Enum1.Red;

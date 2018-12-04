@@ -38,4 +38,4 @@ const readonlyData: ReadOnly<Data> = {
   type: '',
   length: 0
 }
-readonlyData.length = 10;
+readonlyData.length = 10; // <-- error data is readonly!
