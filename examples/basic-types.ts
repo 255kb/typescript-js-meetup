@@ -34,6 +34,14 @@ enum Things {
 }
 Things.Thing1;
 
+// Enum: be careful of human error 🤓
+enum Status {
+  Enabled = 'enabled',
+  Disabled = 'enabled', // Oops 🤬
+}
+console.log(Status.Enabled === Status.Disabled); // true 🧐
+
+
 
 /** Object: anything different from string, number, boolean, symbol, null, undefined */
 let anObject: object;
