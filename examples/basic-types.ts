@@ -69,7 +69,7 @@ type Car = {
   customColor?: string;
 };
 
-function createCar(doors: number, wheels = 4, customColor?: string) { }
+function createCar(doors: number, wheels: number = 4, customColor?: string) { }
 createCar(2);
 createCar(2, 6);
 createCar(2, 4, 'red');

@@ -23,7 +23,7 @@
         "arrow-parens": false,
         "member-access": false,
         "variable-name": false,
-        "no-inferrable-types": true,
+        "no-inferrable-types": false,
         "no-empty": false,
         "max-classes-per-file": false,
         "no-shadowed-variable": false,
