@@ -57,8 +57,8 @@ interface Animals {
 }
 
 class Bird {
-  type: string;
-  legs: number;
+  type!: string;
+  legs!: number;
 }
 
 let seagul: Animals;
