@@ -5,6 +5,7 @@
 
 const myName: string = 'Georges';
 const myAge: number = 40;
+const subscribed: boolean = true;
 
 /** Literals (string, numbers) */
 const stringLiteral: 'string1' | 'string2' = 'string1';
