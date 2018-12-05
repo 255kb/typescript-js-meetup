@@ -34,7 +34,7 @@ console.log(game.run());
 function addMagicNumberProperty<T extends { new(...args: any[]): {} }>(constructor: T) {
   return class extends constructor {
     magicNumber = 42;
-  }
+  };
 }
 
 @addMagicNumberProperty
@@ -53,7 +53,7 @@ const deprecated = (message: string): MethodDecorator => {
   return (target, propertyKey) => {
     const func = target.constructor.prototype[propertyKey];
     target.constructor.prototype[propertyKey] = (...args: any[]) => {
-      console.warn(`DEPRECATED: ${target.constructor.name}#${propertyKey.toString()} ${message}`)
+      console.warn(`DEPRECATED: ${target.constructor.name}#${propertyKey.toString()} ${message}`);
       return func(...args);
     };
   };
@@ -67,10 +67,4 @@ class Browser {
   }
 }
 
-console.log(Browser.runIE6())
-
-
-
-
-
-
+console.log(Browser.runIE6());
