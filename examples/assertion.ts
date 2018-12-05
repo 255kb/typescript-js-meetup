@@ -8,13 +8,13 @@ const text: any = 'lorem ipsum bla';
 
 /** Casting: a class example **/
 
-abstract class Animal { }
+abstract class Feline { }
 
-class Cat extends Animal { }
+class Cat extends Feline { }
 
-const animal: Animal = new Cat();
+const feline: Feline = new Cat();
 
-animal as Cat;
+feline as Cat;
 
 /** Casting: not working if no possible conversion **/
 

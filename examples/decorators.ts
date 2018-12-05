@@ -55,7 +55,7 @@ const deprecated = (message: string): MethodDecorator => {
     target.constructor.prototype[propertyKey] = (...args: any[]) => {
       console.warn(`DEPRECATED: ${target.constructor.name}#${propertyKey.toString()} ${message}`)
       return func(...args);
-    }
+    };
   };
 };
 
