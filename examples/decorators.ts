@@ -62,9 +62,17 @@ const deprecated = (message: string): MethodDecorator => {
 class Browser {
 
   @deprecated('Please use a modern browser')
-  static runIE6() {
+  runIE6() {
     console.log('Running IE6...');
   }
 }
 
-console.log(Browser.runIE6());
+const browser = new Browser();
+
+browser.runIE6();
+
+
+
+
+
+
