@@ -2,15 +2,15 @@
 
 /** BROWSER **/
 
-// Example from W3C (https://www.w3schools.com/jsref/met_document_addeventlistener.asp) 
-// This would not compile in TS (with strict mode) : document.getElementById("test").innerHTML = "Hello World";
+// Example from W3C (https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
+// This would not compile in TS (with strict mode) : document.getElementById('test').innerHTML = 'Hello World';
 
-document.addEventListener("click", () => {
+document.addEventListener('click', () => {
 
-  const element = document.getElementById("test");
+  const element = document.getElementById('test');
 
   if (element) {
-    element.innerHTML = "Hello World";
+    element.innerHTML = 'Hello World';
   }
 });
 

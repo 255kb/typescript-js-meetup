@@ -60,3 +60,16 @@ const whatever: any = true;
 function neverReturning(): never {
   throw new Error();
 }
+
+
+/** Optional properties and parameters, default parameter */
+type Car = {
+  doors: number;
+  wheels: number;
+  customColor?: string;
+};
+
+function createCar(doors: number, wheels = 4, customColor?: string) { }
+createCar(2);
+createCar(2, 6);
+createCar(2, 4, 'red');

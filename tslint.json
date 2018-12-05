@@ -22,7 +22,14 @@
         "no-console": false,
         "arrow-parens": false,
         "member-access": false,
-        "variable-name": false
+        "variable-name": false,
+        "no-inferrable-types": true,
+        "no-empty": false,
+        "max-classes-per-file": false,
+        "no-shadowed-variable": false,
+        "member-ordering": false,
+        "only-arrow-functions": false,
+        "space-before-function-paren": false
     },
     "rulesDirectory": [
       // "node_modules/codelyzer"

@@ -2,7 +2,7 @@
 
 
 // there is a tslint rule to enforce this: no-inferrable-types
-let infered = false;
+let infered: boolean = false;
 
 let country: 'LU' | 'DE' | 'FR' = 'DE';
 if (country === 'DE') {
@@ -46,7 +46,7 @@ function inferedStringLiteral() {
 window.onmouseover = function (mouseEvent) {
   mouseEvent.clientX;
   mouseEvent.anything; // <-- Error
-}
+};
 
 
 /** TYPE COMPATIBILITY */
@@ -62,7 +62,7 @@ class Bird {
 }
 
 let seagul: Animals;
-seagul = new Bird();// <-- ok because interface and class are compatible even if Bird does not implements Animal
+seagul = new Bird(); // <-- ok because interface and class are compatible even if Bird does not implements Animal
 
 
 
@@ -82,9 +82,9 @@ enum Enum1 {
 }
 enum Enum2 {
   Low = 0,
-  Medium = 1, 
+  Medium = 1,
   High = 2
 }
 
 let a = Enum1.Red;
-a = Enum2.Low;// <-- error Enum1.Red not assignable to Enum2.Low
+a = Enum2.Low; // <-- error Enum1.Red not assignable to Enum2.Low

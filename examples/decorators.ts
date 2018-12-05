@@ -3,18 +3,18 @@
 
 /** Class decorator **/
 
-type Prototype<T> = {new(...args:any[]): T}
+type Prototype<T> = { new(...args: any[]): T };
 
 interface IGame {
   run(): void;
 }
 
-function Loop<T extends Prototype<IGame>>(constructor:T) {
+function Loop<T extends Prototype<IGame>>(constructor: T) {
   return class extends constructor {
     run() {
       setTimeout(super.run, 20); // 50 fps
     }
-  }
+  };
 }
 
 @Loop
@@ -27,11 +27,11 @@ class Game {
 
 const game = new Game();
 
-console.log( game.run() );
+console.log(game.run());
 
 /** Class decorator: bad example **/
 
-function addMagicNumberProperty<T extends {new(...args:any[]):{  }}>(constructor:T) {
+function addMagicNumberProperty<T extends { new(...args: any[]): {} }>(constructor: T) {
   return class extends constructor {
     magicNumber = 42;
   }
@@ -39,13 +39,13 @@ function addMagicNumberProperty<T extends {new(...args:any[]):{  }}>(constructor
 
 @addMagicNumberProperty
 class MagicClass {
-  
+
 }
 
 const magicInstance = new MagicClass();
 
-console.log( magicInstance.magicNumber ); // type issue
-  
+console.log(magicInstance.magicNumber); // type issue
+
 
 /** Method decorator **/
 
@@ -60,14 +60,14 @@ const deprecated = (message: string): MethodDecorator => {
 };
 
 class Browser {
-  
+
   @deprecated('Please use a modern browser')
   static runIE6() {
     console.log('Running IE6...');
   }
 }
 
-console.log( Browser.runIE6() )
+console.log(Browser.runIE6())
 
 
 

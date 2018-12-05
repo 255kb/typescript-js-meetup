@@ -23,7 +23,7 @@ const myObject1: { [K in keyof typeof List]: string } = {
 };
 
 
-// create read only type 
+// create read only type
 
 interface Data {
   type: string;
@@ -37,5 +37,5 @@ type ReadOnly<T> = {
 const readonlyData: ReadOnly<Data> = {
   type: '',
   length: 0
-}
+};
 readonlyData.length = 10; // <-- error data is readonly!

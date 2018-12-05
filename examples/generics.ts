@@ -12,7 +12,7 @@ type Animal = {
 
 type Human = Animal & {
   name: string
-}
+};
 
 function getAnimalAge<T extends Animal>(animal: T) {
   return animal.age;
@@ -31,7 +31,7 @@ getAnimalAge(human);
 type Either<L, R> = {
   left: L,
   right: R
-}
+};
 
 // extracted from typescript/lib/lib.es2015.collection.d.ts
 interface Map<K, V> {

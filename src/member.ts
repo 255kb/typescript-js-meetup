@@ -1,8 +1,8 @@
-interface Human {
+interface User {
   age: number | null;
 }
 
-export class Member implements Human {
+export class Member implements User {
   public age: number | null;
 
   constructor(age: number | null) {

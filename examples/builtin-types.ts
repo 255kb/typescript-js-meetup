@@ -15,13 +15,13 @@ function updateState(partialState: Partial<IState>) {
   state = {
     ...state,
     ...partialState
-  }
+  };
 }
 
 updateState({});
-updateState({foo: 'updated-foo'});
-updateState({bar: 'updated-bar'});
-updateState({test: 'test'});
+updateState({ foo: 'updated-foo' });
+updateState({ bar: 'updated-bar' });
+updateState({ test: 'test' });
 
 
 /** Readonly **/
@@ -42,7 +42,7 @@ const pickedState: Pick<IState, 'foo'> = {
 
 /** Record **/
 
-const recordState: Record<'foo'|'bar', string> = {
+const recordState: Record<'foo' | 'bar', string> = {
   foo: 'foo',
   bar: 'bar',
   test: 'test'
